@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA7D5E83-0C67-43A1-AA31-3C5F327FEC54}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LEA_by_DELAN</RootNamespace>
+    <AssemblyName>LEA by DELAN</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\isnan\Downloads\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>510D59D4B6AF25E02AD80F84086B3189919A4EAB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>LEA by DELAN_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumberTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberTest.Designer.cs">
+      <DependentUpon>NumberTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Question\Q20_23.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Q20_23.Designer.cs">
+      <DependentUpon>Q20_23.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Q24_25.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Q24_25.Designer.cs">
+      <DependentUpon>Q24_25.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Q16_19.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Q16_19.Designer.cs">
+      <DependentUpon>Q16_19.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Q15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Q15.Designer.cs">
+      <DependentUpon>Q15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Q14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Q14.Designer.cs">
+      <DependentUpon>Q14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Q13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Q13.Designer.cs">
+      <DependentUpon>Q13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Q12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Q12.Designer.cs">
+      <DependentUpon>Q12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Q11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Q11.Designer.cs">
+      <DependentUpon>Q11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Q10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Q10.Designer.cs">
+      <DependentUpon>Q10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Q4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Q4.Designer.cs">
+      <DependentUpon>Q4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Q9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Q9.Designer.cs">
+      <DependentUpon>Q9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Q8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Q8.Designer.cs">
+      <DependentUpon>Q8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Q7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Q7.Designer.cs">
+      <DependentUpon>Q7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Q6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Q6.Designer.cs">
+      <DependentUpon>Q6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Q5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Q5.Designer.cs">
+      <DependentUpon>Q5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Q3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Q3.Designer.cs">
+      <DependentUpon>Q3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Q2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Q2.Designer.cs">
+      <DependentUpon>Q2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Q1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Q1.Designer.cs">
+      <DependentUpon>Q1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text24_25.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text24_25.Designer.cs">
+      <DependentUpon>Text24_25.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text20_23.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text20_23.Designer.cs">
+      <DependentUpon>Text20_23.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text16_19.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text16_19.Designer.cs">
+      <DependentUpon>Text16_19.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text15.Designer.cs">
+      <DependentUpon>Text15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text14.Designer.cs">
+      <DependentUpon>Text14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text13.Designer.cs">
+      <DependentUpon>Text13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text12.Designer.cs">
+      <DependentUpon>Text12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text11.Designer.cs">
+      <DependentUpon>Text11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text10.Designer.cs">
+      <DependentUpon>Text10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text9.Designer.cs">
+      <DependentUpon>Text9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text8.Designer.cs">
+      <DependentUpon>Text8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text7.Designer.cs">
+      <DependentUpon>Text7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text6.Designer.cs">
+      <DependentUpon>Text6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text5.Designer.cs">
+      <DependentUpon>Text5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text4.Designer.cs">
+      <DependentUpon>Text4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text3.Designer.cs">
+      <DependentUpon>Text3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text2.Designer.cs">
+      <DependentUpon>Text2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Question\Question Hint\Text1.Designer.cs">
+      <DependentUpon>Text1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result.Designer.cs">
+      <DependentUpon>Result.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberTest.resx">
+      <DependentUpon>NumberTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Question\Q20_23.resx">
+      <DependentUpon>Q20_23.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Q24_25.resx">
+      <DependentUpon>Q24_25.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Q16_19.resx">
+      <DependentUpon>Q16_19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Q15.resx">
+      <DependentUpon>Q15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Q14.resx">
+      <DependentUpon>Q14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Q13.resx">
+      <DependentUpon>Q13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Q12.resx">
+      <DependentUpon>Q12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Q11.resx">
+      <DependentUpon>Q11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Q10.resx">
+      <DependentUpon>Q10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Q4.resx">
+      <DependentUpon>Q4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Q9.resx">
+      <DependentUpon>Q9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Q8.resx">
+      <DependentUpon>Q8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Q7.resx">
+      <DependentUpon>Q7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Q6.resx">
+      <DependentUpon>Q6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Q5.resx">
+      <DependentUpon>Q5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Q3.resx">
+      <DependentUpon>Q3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Q2.resx">
+      <DependentUpon>Q2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Q1.resx">
+      <DependentUpon>Q1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Question Hint\Text24_25.resx">
+      <DependentUpon>Text24_25.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Question Hint\Text20_23.resx">
+      <DependentUpon>Text20_23.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Question Hint\Text16_19.resx">
+      <DependentUpon>Text16_19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Question Hint\Text15.resx">
+      <DependentUpon>Text15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Question Hint\Text14.resx">
+      <DependentUpon>Text14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Question Hint\Text13.resx">
+      <DependentUpon>Text13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Question Hint\Text12.resx">
+      <DependentUpon>Text12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Question Hint\Text11.resx">
+      <DependentUpon>Text11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Question Hint\Text10.resx">
+      <DependentUpon>Text10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Question Hint\Text9.resx">
+      <DependentUpon>Text9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Question Hint\Text8.resx">
+      <DependentUpon>Text8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Question Hint\Text7.resx">
+      <DependentUpon>Text7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Question Hint\Text6.resx">
+      <DependentUpon>Text6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Question Hint\Text5.resx">
+      <DependentUpon>Text5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Question Hint\Text4.resx">
+      <DependentUpon>Text4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Question Hint\Text3.resx">
+      <DependentUpon>Text3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Question Hint\Text2.resx">
+      <DependentUpon>Text2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Question\Question Hint\Text1.resx">
+      <DependentUpon>Text1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result.resx">
+      <DependentUpon>Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="LEA by DELAN_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16-19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20-23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24-25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUD2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUD3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUD4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUD5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUD6.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUD7.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUD8.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUD9.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUD10.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUD11.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUD12.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUD13.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUD14.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUD15.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUD16-19.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUD20-23.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUD24-25.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUD1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
